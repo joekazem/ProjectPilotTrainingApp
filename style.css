@@ -1,0 +1,183 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+.header {
+    margin-bottom: 15px;
+    background-color: #A2D6F9;
+    background-size: cover;
+    border: 10px;
+    border-color: aquamarine;
+    
+}
+.image {
+   display: block;
+   float: left;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    
+}
+.images {
+    display: block;
+    float: right;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+.logo {
+    position: absolute;
+    top: 45px;
+    
+    left: 530px;
+    color: #04395E;
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 12px;
+    text-shadow: 20px;
+    
+    
+}
+
+.tabs li {
+    float: left;
+    position: relative;
+   list-style: none;
+}
+.tabs button {
+    float: left;
+    padding: 10px 70px;
+    text-decoration: none;
+    
+    -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 15px; 
+
+}
+.tabs .active button {
+z-index: 3;
+}
+.quiz {
+    background-color: #8FE388 ;
+}
+.active, .aircraft {
+    background-color: #ABFF4F;
+}
+.performance {
+    background-color: #F3E37C;
+}
+.about {
+    background-color: #A0B9C6;
+}
+.contact {
+    background-color: #BDB246;
+}
+.signon {
+    background-color: #E07A5F;
+}
+.weather {
+  background-color: #88292F;  
+}
+.contactUs {
+    text-align: center;
+    font-size: 20px;
+    
+}
+.name {
+    text-align: center;
+    font-weight: 600;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.firstName {
+    width: 650px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #FCF6B1;
+}
+.phoneNumber {
+    width: 650px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #FCF6B1;
+}
+.email {
+    width: 650px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #FCF6B1;
+}
+.lastName {
+    width: 650px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #FCF6B1;
+}
+
+.message {
+    text-align: center;
+    width: 100% ;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #FCF6B1;
+}
+.contactSubmit {
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    color: orangered;
+}
+
+/*.hidden {
+display: none;
+}*/
+body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    min-height: 100%;
+
+    
+}
+body .container {
+    display: flex;
+    flex-direction: column;
+    
+    }   
+body .tabContentOne {
+    background-color: #4F86C6;
+    height: 100%;
+    flex: 1;
+}
+/*body .tabContenttwo {
+    background-color: #8FE388;
+    height: 100%;
+    flex: 1;
+}*/
+#tabInformationContainer {
+    min-height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photoTab {
+    image-rendering: auto;
+}
+h1 {
+    text-decoration: underline;
+}
+footer {
+width: 400px;
+height: 30px;
+background-color: rgb(190, 179, 179);
+color: rgb(41, 31, 31);
+border: rgb(8, 6, 6) solid;
+text-align: center;
+position: relative;
+top: 600px;
+}
