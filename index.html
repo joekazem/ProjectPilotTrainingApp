@@ -7,6 +7,7 @@
     <title>Final Project Pilot Training App Site</title>
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BOEING"> -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 
 
@@ -39,8 +40,38 @@
     </div>
     <div id="tabinformationcontainer" class="container aircraft">
         <div id="tabinformation" class="container">
-            <h4>Aircraft info goes here</h4>`
+            <div class="inputgroupone">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Please Choose the Aircraft make and Model
+                        You Wish to Start Training</label>
+                </div>
+                <select class="custom-select">
+                    <option selected>Choose Aircraft Manufacturer </option>
+                    <option value="1">Boeing</option>
+                    <option value="2">Airbus</option>
+                    <option value="3">Bombardier</option>
+                    <option value="4">Embraer</option>
+                    <option value="5">Beechcraft</option>
+                </select>
 
+
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01"></label>
+                </div>
+                <select class="custom-select">
+                    <option selected>Choose Aircraft Model </option>
+                    <option value="1">737-300/400</option>
+                    <option value="2">737-800/900</option>
+                    <option value="3">767-200</option>
+                    <option value="4">767-300</option>
+                    <option value="5">757-200</option>
+                    <option value="6">747-200/300</option>
+                    <option value="7">747-400</option>
+                </select>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Submit</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -61,6 +92,7 @@
 
 
     <script src="./script.js"></script>
+
 </body>
 <footer>
     <div class="footer">
