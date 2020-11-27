@@ -116,7 +116,7 @@ function switchtab(tab) {
         case "weather":
             informationcontainer.className = "";
             informationcontainer.classList.add("container", "weather");
-            tabinformation.innerHTML = `<h2 weather info goes here</h2>
+            tabinformation.innerHTML = `<h2> weather info goes here</h2>
             `
             break
     }
