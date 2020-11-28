@@ -25,11 +25,9 @@
     </header>
     <div class="buttonContainer container">
         <ul class="tabs group">
-            <li><button id="aircraft" class="active tabButtonAbout" onclick="switchtab('aircraft')">Aircraft</button>
-                </button>
-            </li>
-            <li><button id="performance" class="performance tabButtonPhoto"
-                    onclick="switchtab('performance')">Performance</button></li>
+            <li><button id="welcome" class="active tabButtonAbout" onclick="switchtab('welcome')">Welcome</button> </li>
+            <li><button id="aircraft" class="aircraft tabButton" onclick="switchtab('aircraft')">Aircraft</button></li>
+            <li><button id="performance" class="performance tabButtonPhoto" onclick="switchtab('performance')">Performance</button></li>
             <li><button id="weather" class="weather tabButton" onclick="switchtab('weather')">Weather</button></li>
             <li><button id="quiz" class="quiz tabButton" onclick="switchtab('quiz')">Quiz</button></li>
             <li><button id="About" class="about tabButton" onclick="switchtab('about')">About</button></li>
@@ -38,9 +36,10 @@
 
         </ul>
     </div>
-    <div id="tabinformationcontainer" class="container aircraft">
+    <div id="tabinformationcontainer" class="container welcome">
         <div id="tabinformation" class="container">
-            <div class="inputgroupone">
+            <h2>Welcome inmfo goes here</h2>
+           <!---- <div class="inputgroupone">
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">Please Choose the Aircraft make and Model
                         You Wish to Start Training</label>
@@ -71,7 +70,7 @@
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button">Submit</button>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 

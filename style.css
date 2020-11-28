@@ -64,11 +64,14 @@ z-index: 3;
 .quiz {
     background-color: #8FE388 ;
 }
-.active, .aircraft {
+.active, .welcome {
     background-color: #ABFF4F;
 }
 .performance {
     background-color: #F3E37C;
+}
+.aircraft {
+    background-color: #A0B9C6;
 }
 .about {
     background-color: #A0B9C6;

@@ -2,11 +2,15 @@ function switchtab(tab) {
     var informationcontainer = document.getElementById("tabinformationcontainer");
     var tabinformation = document.getElementById("tabinformation");
     switch (tab) {
-        case "aircraft":
+        case "welcome":
             informationcontainer.className = "";
-            informationcontainer.classList.add("container", "aircraft");
-            tabinformation.innerHTML = `
- <div class="inputgroupone">
+            informationcontainer.classList.add("container", "welcome");
+            tabinformation.innerHTML = `<h2>Welcome info goes here</h2>`
+            break
+            case "aircraft":
+                informationcontainer.className = "";
+                informationcontainer.classList.add("container", "aircraft");
+                tabinformation.innerHTML = `<div class="inputgroupone">
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">Please Choose the Aircraft make and Model
                         You Wish to Start Training</label>
@@ -37,10 +41,8 @@ function switchtab(tab) {
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button">Submit</button>
                 </div>
-            </div>
-   
-`
-            break
+            </div>`
+                
         case "performance":
             informationcontainer.className = "";
             informationcontainer.classList.add("container", "performance");
