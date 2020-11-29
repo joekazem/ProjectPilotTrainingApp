@@ -42,7 +42,7 @@ function switchtab(tab) {
                     <button class="btn btn-outline-secondary" type="button">Submit</button>
                 </div>
             </div>`
-                
+             break   
         case "performance":
             informationcontainer.className = "";
             informationcontainer.classList.add("container", "performance");
@@ -123,4 +123,63 @@ function switchtab(tab) {
             break
     }
 
+}
+function register() {
+  tabinformation.innerHTML = ` <div id="login-container" class="login-container">
+    <div class="login-text">
+        <h2>Enter Your Information</h2>
+    </div>
+    <div class="username">
+        <span>Name</span>
+        <input type="text" id = 'name' class="user-name-input" placeholder='Enter Name'>
+    </div>
+    <div class="user-email">
+        <span>Email</span>
+        <input type="text" id = 'email' class="user-name-input" placeholder='Enter Email'>
+    </div>
+    <div class="password">
+        <span>Password</span>
+        <input type="text" id ='password' class="user-password-input" placeholder="Enter Password">
+    </div>
+    <div class="button">
+        <span id="login-button" onclick="newUser()">Register</span>
+    </div>
+        
+</div>`;
+}
+function backToLogin() {
+  tabinformation.innerHTML = `<div id="login-container" class="login-container">
+    <div class="login-text">
+        <h2>Thank you! Please Login</h2>
+    </div>
+    <div class="user-email">
+        <span>Email</span>
+        <input type="text" id = 'email' class="user-name-input" placeholder='Enter Email'>
+    </div>
+    <div class="password">
+        <span>Password</span>
+        <input type="text" id ='password' class="user-password-input" placeholder="Enter Password">
+    </div>
+    <div class="button">
+        <span id="login-button" onclick="checkInfo()">LOGIN</span>
+    </div>
+    <div class="text">
+        <span>Don't have an account yet?</span>
+    </div>
+    <div class="button">
+        <span id="register-button" onclick="register()">SIGN UP</span>
+    </div>
+        
+    </div>`;
+}
+function welcome(activeUser) {
+  tabinformation.innerHTML = ` <div id="login-container" class="login-container">
+    <div class="login-text">
+        <h2>Welcome ${activeUser} </h2>
+    </div>
+    <div class="button">
+    <span id="logout-button" onclick="logout()">Log Out</span>
+</div>
+        
+</div>`;
 }
