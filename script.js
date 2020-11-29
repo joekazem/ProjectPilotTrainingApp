@@ -5,7 +5,26 @@ function switchtab(tab) {
         case "welcome":
             informationcontainer.className = "";
             informationcontainer.classList.add("container", "welcome");
-            tabinformation.innerHTML = `<h2>Welcome info goes here</h2>`
+            tabinformation.innerHTML = `<Div class="welcome-header">
+                <img src="./logo.png"><h1>Welcome to AvTrain</h1>
+                
+            </Div>
+            <div class="welcome-info">
+                <p><span class="goal">Our #1 goal since 2020</span> is to offer the most extensive aviation resource to worldwide professional
+                    Airline Pilots. We desire to spread the undeniable ideas that ‘knowledge is useless unless you share
+                    it’ and ‘more aviation knowledge means less accidents’. We strongly encourage aviation safety,
+                    strong C.R.M practices and good pilot decision making!
+                </p>
+                <br>
+                <h2 class="welcome-name">AvTrain.com</h2>
+                <p>is a tremendous free online aviation library, where anyone can obtain specific information on
+                    virtually any aviation topic. We will be adding more topics every week. If you have any knowledge, experience or comments to add please contact us. We will answer any technical & aviation related question regarding this site, please click the 'contact tab' and we will answer your email.</p>
+            <br>
+              <p class="add">NOTE: Only the Boeing 737 NG is active at this time. We will be adding more content soon...</p></span>
+            </div>
+            <div class="welcome-start">
+                <p>To begin your  Aviation training journey please click the "Sign-On" tab and register for a free account</p>
+            </div>`
             break
             case "aircraft":
                 informationcontainer.className = "";
