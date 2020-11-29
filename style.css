@@ -83,12 +83,53 @@ z-index: 3;
     background-color: #E07A5F;
 }
 .weather {
-  background-color: #88292F;  
+  background-color: #ABFF4F;  
 }
 .contactUs {
     text-align: center;
     font-size: 20px;
     
+}
+.welcome-info {
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    background-color: #A0B9C6;
+    border-radius: 15px;
+    border: solid black;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 200px;
+    padding: 15px 15px;
+
+}
+.goal {
+    font-weight: bold;
+}
+.add {
+    font-weight: bold;
+    color: #FF8C42;
+}
+
+.welcome-header {
+    position: relative;
+    left: 100px;
+}
+.welcome-start {
+    width: 300px;
+    height: 150px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #DA4167;
+    border: solid #F78764 ;
+    background-color: #EBEBD3;
+    border-radius: 15px;
+    padding: 15px 15px;
+    position: relative;
+    left: 60%;
+    bottom: 400px;
 }
 .name {
     text-align: center;

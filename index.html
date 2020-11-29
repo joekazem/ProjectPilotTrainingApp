@@ -27,7 +27,8 @@
         <ul class="tabs group">
             <li><button id="welcome" class="active tabButtonAbout" onclick="switchtab('welcome')">Welcome</button> </li>
             <li><button id="aircraft" class="aircraft tabButton" onclick="switchtab('aircraft')">Aircraft</button></li>
-            <li><button id="performance" class="performance tabButtonPhoto" onclick="switchtab('performance')">Performance</button></li>
+            <li><button id="performance" class="performance tabButtonPhoto"
+                    onclick="switchtab('performance')">Performance</button></li>
             <li><button id="weather" class="weather tabButton" onclick="switchtab('weather')">Weather</button></li>
             <li><button id="quiz" class="quiz tabButton" onclick="switchtab('quiz')">Quiz</button></li>
             <li><button id="About" class="about tabButton" onclick="switchtab('about')">About</button></li>
@@ -38,39 +39,27 @@
     </div>
     <div id="tabinformationcontainer" class="container welcome">
         <div id="tabinformation" class="container">
-            <h2>Welcome inmfo goes here</h2>
-           <!---- <div class="inputgroupone">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Please Choose the Aircraft make and Model
-                        You Wish to Start Training</label>
-                </div>
-                <select class="custom-select">
-                    <option selected>Choose Aircraft Manufacturer </option>
-                    <option value="1">Boeing</option>
-                    <option value="2">Airbus</option>
-                    <option value="3">Bombardier</option>
-                    <option value="4">Embraer</option>
-                    <option value="5">Beechcraft (for future use)</option>
-                </select>
+            <Div class="welcome-header">
+                <h1>Welcome to AvTrain</h1>
+                <img class="img-head" src="./logo.png">
+            </Div>
+            <div class="welcome-info">
+                <p><span class="goal">Our #1 goal since 2020</span> is to offer the most extensive aviation resource to worldwide professional
+                    Airline Pilots. We desire to spread the undeniable ideas that ‘knowledge is useless unless you share
+                    it’ and ‘more aviation knowledge means less accidents’. We strongly encourage aviation safety,
+                    strong C.R.M practices and good pilot decision making!
+                </p>
+                <br>
+                <h2 class="welcome-name">AvTrain.com</h2>
+                <p>is a tremendous free online aviation library, where anyone can obtain specific information on
+                    virtually any aviation topic. We will be adding more topics every week. If you have any knowledge, experience or comments to add please contact us. We will answer any technical & aviation related question regarding this site, please click the 'contact tab' and we will answer your email.</p>
+            <br>
+              <p class="add">NOTE: Only the Boeing 737 NG is active at this time. We will be adding more soon...</p></span>
+            </div>
+            <div class="welcome-start">
+                <p>To begin your  Aviation training journey please click the "Sign-On" tab and register for a free account</p>
+            </div>
 
-
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01"></label>
-                </div>
-                <select class="custom-select">
-                    <option selected>Choose Aircraft Model </option>
-                    <option value="1">737-300/400</option>
-                    <option value="2">737-800/900</option>
-                    <option value="3">767-200</option>
-                    <option value="4">767-300</option>
-                    <option value="5">757-200</option>
-                    <option value="6">747-200/300</option>
-                    <option value="7">747-400</option>
-                </select>
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Submit</button>
-                </div>
-            </div>-->
         </div>
     </div>
 
