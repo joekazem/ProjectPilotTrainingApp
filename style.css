@@ -114,8 +114,15 @@ z-index: 3;
 }
 
 .welcome-header {
+    width: 400px;
+    height: 140px;
+    background-color: #FFFFFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    padding: 10px 10px;
     position: relative;
-    left: 100px;
+    left: 50%;
+
 }
 .welcome-start {
     width: 300px;
