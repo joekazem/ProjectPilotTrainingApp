@@ -15,7 +15,7 @@ app.options('/register', (req, res) => {
 });
 
 app.options('/login', (req, res) => {
-    res.sendStatus(204);
+   res.sendStatus(204);
 });
 app.use(bodyParser.urlencoded({
     extended: true
@@ -25,7 +25,8 @@ app.use(bodyParser.urlencoded({
 // PORT
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@final-project.qlut2.mongodb.net/Final-Project?retryWrites=true&w=majority`, {
+//mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@final-project.qlut2.mongodb.net/Final-Project?retryWrites=true&w=majority`, {
+   mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@final-project.qlut2.mongodb.net/Final-Project?retryWrites=true&w=majority`, { 
     useCreateIndex: true,
     useUnifiedTopology: true,
     useNewUrlParser: true
