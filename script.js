@@ -137,7 +137,11 @@ function switchtab(tab) {
         case "weather":
             informationcontainer.className = "";
             informationcontainer.classList.add("container", "weather");
-            tabinformation.innerHTML = `<h2> weather info goes here</h2>
+            tabinformation.innerHTML = `<p class="wx-chart">The following are charts to refresh your weather knowledge</p>
+           <hr><hr>
+            <img class="prog-chart" src="./prog_chart_sample.gif">
+            <img class="wx-chart-one" src="./download (1).jpeg">
+            <img class="wx-chart-two" src="./download (1).png>
             `
             break
     }
@@ -201,4 +205,40 @@ function welcome(activeUser) {
 </div>
         
 </div>`;
+}
+function enableButtons() {
+  disabledButtons = document.getElementsByClassName("disabled");
+  i = disabledButtons.length;
+
+  while (i--) {
+    disabledButtons[i].classList.replace("disabled", "enabled");
+  }
+}
+function logout() {
+  enabledButtons = document.getElementsByClassName("enabled");
+  i = enabledButtons.length;
+
+  while (i--) {
+    enabledButtons[i].classList.replace("enabled", "disabled");
+  }
+
+  tabinformation.innerHTML = ` <div id="login-container" class="login-container">
+            <div class="login-text">
+                <h2>Login</h2>
+            </div>
+            <div class="user-email">
+                <span>Email</span>
+                <input type="text" id = 'email' class="user-name-input" placeholder='Enter Email'>
+            </div>
+            <div class="password">
+                <span>Password</span>
+                <input type="text" id ='password' class="user-password-input" placeholder="Enter Password">
+            </div>
+            <div class="button">
+                <span id="login-button" onclick="checkInfo()">LOGIN</span>
+            </div>
+            <div class="text">
+                <span>Don't have an account yet?</span>
+            </div>
+            <div class="button">`
 }

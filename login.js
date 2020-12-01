@@ -17,10 +17,11 @@ getUser = (email, password) => {
         console.log(data);
         activeUser=data.name;
         welcome(activeUser);
+        enableButtons();
     }).catch(error => console.log('error', error));
 }
 addUser = (name, email, password) => {
-    fetch(urlLogin,
+    fetch(urlRegister,
     {
         method: 'POST',
         body: JSON.stringify({email: email, password: password, name: name }),
@@ -33,6 +34,7 @@ headers: {
         return response.json();
     }).then((data)=> {
         console.log(data);
+        backToLogin();
     }).catch(error => console.log('error', error));
 }
 const checkInfo = () => {
