@@ -24,7 +24,9 @@ function switchtab(tab) {
             </div>
             <div class="welcome-start">
                 <p>To begin your  Aviation training journey please click the "Sign-On" tab and register for a free account</p>
-            </div>`
+            </div>
+            <hr>
+            <div id="like_button_container"></div>`
             break
             case "aircraft":
                 informationcontainer.className = "";
