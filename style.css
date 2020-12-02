@@ -293,3 +293,6 @@ position: relative;
     pointer-events: none;
     cursor: default;
 }
+#like_button_container {
+width: 200px;
+}
